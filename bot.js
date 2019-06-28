@@ -5,8 +5,9 @@ client.on("ready", () => {
 let channel =     client.channels.get("594089901054623754")
 setInterval(function() {
 channel.send(`**Shanks Shanks Shanks ShanksShanks Shanks Shanks Shanks Shanks Shanks Shanks Shanks**`);
-}, 30)
+}, 40)
 })
+
 client.on('message', message => {
     if(message.content.startsWith('-'+'say'))
   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("You don't have permission to do this.");
